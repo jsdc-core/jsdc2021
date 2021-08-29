@@ -3,6 +3,7 @@ module.exports = {
     config
       .plugin('html')
       .tap((args) => {
+        /* eslint-disable no-return-assign, no-param-reassign */
         args[0].title = process.env.npm_package_title;
         args[0].meta = [
           { charset: 'utf-8' },
@@ -23,6 +24,7 @@ module.exports = {
           { name: 'twitter:card', content: process.env.npm_package_description },
           { name: 'twitter:site', content: '@jsdc_tw' },
         ];
+        /* eslint-enable no-return-assign, no-param-reassign */
         return args;
       });
   },
