@@ -1,4 +1,4 @@
-# jsdc2021
+# JSDC2021
 
 ## Project setup
 ```
