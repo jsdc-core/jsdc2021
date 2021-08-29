@@ -11,6 +11,10 @@
   color: $white;
   background: $dark;
   will-change: color;
+  font-size: 0.9em;
+  @media screen and (min-width: $tablet-size) {
+    font-size: 1.5em;
+  }
 }
 a {
   color: #ffffa4;

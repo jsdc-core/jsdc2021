@@ -18,11 +18,15 @@
   min-height: calc(100vh - 60px);
   .logo_banner {
     max-width: 640px;
+    width: 100%;
   }
   .intro_content, .sub_content{
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 20px;
+    @media screen and (min-width: $tablet-size) {
+      font-size: 2em;
+    }
   }
 }
 </style>
