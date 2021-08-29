@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: calc(100vh - 60px);
   .logo_banner {
     max-width: 640px;
   }
