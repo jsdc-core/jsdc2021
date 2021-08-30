@@ -3,13 +3,14 @@
   "title": "JSDC 2021",
   "description": "臺灣 JavaScript 開發者年會 ( JavaScript Developer Conference Taiwan，簡稱 JSDC ) 是台灣最⼤的 JavaScript 年度性技術研討會，旨在提供台灣中⾼階 JavaScript 技術人才與世界最新 JavaScript 相關技術討論與分享。",
   "copyright": "JSDC Taiwan",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "author": "Horken <horkenwong@gmail.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5",

@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/dist/' : '/',
   chainWebpack: (config) => {
     config
       .plugin('html')
@@ -25,6 +26,12 @@ module.exports = {
           { name: 'twitter:site', content: '@jsdc_tw' },
         ];
         /* eslint-enable no-return-assign, no-param-reassign */
+        return args;
+      });
+    config
+      .plugin('define')
+      .tap(args => {
+        args[0]['process.env'].version = JSON.stringify(require('./package.json').version);
         return args;
       });
   },
