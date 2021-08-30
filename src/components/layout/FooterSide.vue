@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-      © 2021 <a href="http://jsdc.tw" target="_blank">JSDC.tw</a> | 宅斯迪西股份有限公司 (JSDC Corp.)
+      © 2021 <a href="https://jsdc.tw/" target="_blank">JSDC.tw</a> | 宅斯迪西股份有限公司 (JSDC Corp.)
   </footer>
 </template>
 
