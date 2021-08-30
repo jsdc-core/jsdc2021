@@ -10,5 +10,6 @@ echo '2021.jsdc.tw' > CNAME
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:jsdc-core/jsdc2021.git master:tasks/deploy-to-git-page
+git push -f git@github.com:jsdc-core/jsdc2021.git master:gh-pages
+echo All done!
 cd -
