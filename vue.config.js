@@ -28,6 +28,12 @@ module.exports = {
         /* eslint-enable no-return-assign, no-param-reassign */
         return args;
       });
+    config
+      .plugin('define')
+      .tap(args => {
+        args[0]['process.env'].version = JSON.stringify(require('./package.json').version);
+        return args;
+      });
   },
   css: {
     loaderOptions: {
