@@ -1,5 +1,5 @@
 <template>
-  <div id="jsdc">
+  <div class="font-sans">
     <div class="hidden">{{appVersion}}</div>
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -9,15 +9,6 @@
     <footer-side></footer-side>
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
-</style>
 
 <script>
 import FooterSide from '@/components/layout/FooterSide.vue';
