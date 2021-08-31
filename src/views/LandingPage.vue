@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <main-content></main-content>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -9,7 +9,7 @@
 import MainContent from '@/components/pages/MainContent.vue';
 
 export default {
-  name: 'Landing',
+  name: 'main',
   components: {
     MainContent,
   },
