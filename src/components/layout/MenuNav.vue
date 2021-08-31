@@ -1,6 +1,6 @@
 <template>
   <nav class="w-screen fixed bg-transparent">
-    <div class="container rounded bg-black px-8 m-2.5">
+    <div class="rounded bg-black px-8 m-2.5">
       <a href="/">
         <div>
           <img src="@/assets/images/logo.svg" alt="">
