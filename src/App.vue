@@ -1,11 +1,7 @@
 <template>
   <div class="font-sans">
-    <menu-nav></menu-nav>
     <div class="hidden">{{appVersion}}</div>
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+    <menu-nav></menu-nav>
     <router-view/>
     <footer-side></footer-side>
   </div>
