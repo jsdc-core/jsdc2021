@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/jsdc2021/' : '/',
+  // publicPath: process.env.NODE_ENV === 'production' ? '/jsdc2021/' : '/',
   chainWebpack: (config) => {
     config
       .plugin('html')
