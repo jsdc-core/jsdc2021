@@ -6,4 +6,5 @@
 
 body {
   background: url('~@/assets/images/bg.png') $dark;
+  @apply bg-contain;
 }
