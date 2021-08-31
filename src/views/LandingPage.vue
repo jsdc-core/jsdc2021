@@ -9,7 +9,7 @@
 import MainContent from '@/components/pages/MainContent.vue';
 
 export default {
-  name: 'Landing',
+  name: 'main',
   components: {
     MainContent,
   },
