@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="landing_intro">
-        <img class="logo_banner" src="../../assets/images/mainLogo.png" alt="JSDC_2021">
+        <img class="logo_banner" src="@/assets/images/mainLogo.png" alt="JSDC_2021">
         <div class="intro_content">JSDC 2021 開發者年會 10/30 將於線上舉行</div>
         <div class="sub_content">敬請期待</div>
     </div>
