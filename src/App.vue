@@ -1,7 +1,7 @@
 <template>
   <div class="font-sans">
     <div class="hidden">{{appVersion}}</div>
-    <menu-nav></menu-nav>
+    <menu-nav v-if="!['nofound'].includes($route.name)"></menu-nav>
     <router-view/>
     <footer-side></footer-side>
   </div>
