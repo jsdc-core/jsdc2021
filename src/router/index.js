@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import LandingPage from '../views/LandingPage.vue';
+import NoFound from '../views/404.vue';
 
 Vue.use(VueRouter);
 
@@ -77,7 +78,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 你迷路了嗎？！',
     },
-    component: () => import(/* webpackChunkName: "about" */ '../views/404.vue'),
+    component: NoFound,
   },
 ];
 
