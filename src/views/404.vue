@@ -69,15 +69,15 @@
 }
 @keyframes glowing {
   0% {
-    @apply bg-blue-500;
+    @apply bg-blue-400;
     box-shadow: 0 0 5px rgb(96, 165, 250);
   }
   50% {
-    @apply bg-blue-700;
+    @apply bg-blue-500;
     box-shadow: 0 0 20px rgb(59, 130, 246);
   }
   100% {
-    @apply bg-blue-500;
+    @apply bg-blue-400;
     box-shadow: 0 0 5px rgb(96, 165, 250);;
   }
 }
