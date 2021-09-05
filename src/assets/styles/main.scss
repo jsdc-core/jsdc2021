@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 
 @import './_valuable.scss';
+@import './animate';
 
 body {
   background: url('~@/assets/images/bg.png') $dark;
