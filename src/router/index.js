@@ -37,6 +37,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 講者介紹',
     },
+    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
     path: '/timesheets',
@@ -44,6 +45,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 大會議程',
     },
+    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
     path: '/sponsors',
@@ -51,6 +53,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 合作夥伴',
     },
+    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
     path: '/teammember',
@@ -58,6 +61,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 工作團隊',
     },
+    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
     path: '/conduct',
@@ -65,13 +69,15 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 行為準則',
     },
+    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
     path: '*',
-    name: 'noFound',
+    name: 'nofound',
     meta: {
-      title: 'JSDC 2021 - 你走錯地方了喔！',
+      title: 'JSDC 2021 - 你迷路了嗎？！',
     },
+    component: () => import(/* webpackChunkName: "about" */ '../views/404.vue'),
   },
 ];
 
