@@ -40,7 +40,7 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
-        additionalData: `@import '~@/assets/styles/main.scss';`
+        additionalData: `@import '~@/assets/styles/valuable.scss';`
       }
     }
   },
