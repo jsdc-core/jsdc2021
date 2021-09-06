@@ -1,6 +1,6 @@
 <template>
   <nav class="w-screen fixed bg-transparent">
-    <div class="rounded bg-gray-700 px-8 py-1 m-2">
+    <div class="rounded bg-white px-8 py-1 m-2" :class="{'rounded-b-none': menuToggle}">
       <div class="inline-block">
         <a href="/" class="logo_wrapper inline-block align-middle overflow-hidden whitespace-nowrap">
           <img class="inline-block" src="@/assets/images/common/logo.svg" alt="JSDC 2021" title="JSDC 2021">
@@ -11,7 +11,7 @@
       <div class="hidden md:inline-block float-right py-5">
         <template v-for="(item, index) in menuData">
           <router-link class="p-3 lg:p-4" :to="item.path" :key="`no.${index}`">
-            <span class="pb-2 transition-colors ease-in-out duration-200 border-transparent text-white">
+            <span class="pb-2 transition-colors ease-in-out duration-200 border-transparent text-black">
               {{item.name}}
             </span>
           </router-link>
@@ -24,18 +24,17 @@
         </button>
       </div>
     </div>
-    <div v-if="menuToggle">
-      <ul class="mobile_menu">
+    <transition name="fadeHeight" mode="out-in">
+      <ul class="mobile_menu bg-white rounded-b mx-2 mb-2 -mt-2" v-if="menuToggle">
         <template v-for="(item, index) in menuData">
-          <router-link class="p-3 lg:p-4" tag="li" :to="item.path" :key="`no.${index}`">
-            <span class="pb-2 transition-colors ease-in-out duration-200 border-transparent text-white">
+          <router-link class="p-3 lg:p-4" tag="li" :to="item.path" :key="`no${index}`">
+            <span class="pb-2 transition-colors duration-200 border-transparent text-black">
               {{item.name}}
             </span>
           </router-link>
         </template>
-
       </ul>
-    </div>
+    </transition>
   </nav>
 </template>
 
@@ -49,6 +48,18 @@ a:hover span,
   @apply border-solid;
   @apply border-yellow-600;
   @apply text-yellow-600;
+}
+.fadeHeight-enter-active,
+.fadeHeight-leave-active {
+  // transition: max-height 0.2s;
+  @apply transition-mx-height;
+  @apply max-h-64;
+}
+.fadeHeight-enter,
+.fadeHeight-leave-to
+{
+  @apply opacity-0;
+  @apply max-h-0;
 }
 </style>
 
