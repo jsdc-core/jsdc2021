@@ -38,7 +38,7 @@ export default {
     return {
       typeValue: '',
       typeStatus: false,
-      typeArray: ['10/30'],
+      typeArray: ['10/30', '30th Oct.'],
       typeArrayIdx: 0,
       typeingSpeed: 200,
       erasingSpeed: 100,
