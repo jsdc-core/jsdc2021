@@ -16,7 +16,8 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css?family=Monoton');
 .no_found-content {
   min-height: calc(100vh - 30px);
 }
