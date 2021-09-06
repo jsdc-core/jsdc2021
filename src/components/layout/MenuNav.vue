@@ -51,7 +51,6 @@ a:hover span,
 }
 .fadeHeight-enter-active,
 .fadeHeight-leave-active {
-  // transition: max-height 0.2s;
   @apply transition-mx-height;
   @apply max-h-64;
 }
@@ -74,7 +73,6 @@ export default {
   },
   methods: {
     switchMenu() {
-      // debugger;
       this.menuToggle = !this.menuToggle;
     },
   },

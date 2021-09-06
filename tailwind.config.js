@@ -3,10 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-        transitionProperty: {
-            'mx-height': 'max-height'
-        }
-    }
+      transitionProperty: {
+        'mx-height': 'max-height',
+      },
+    },
   },
   variants: {
     extend: {},
