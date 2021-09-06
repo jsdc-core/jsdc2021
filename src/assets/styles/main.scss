@@ -1,3 +1,4 @@
 body {
   background: url('~@/assets/images/common/bg.png') $dark;
+  @apply bg-contain;
 }
