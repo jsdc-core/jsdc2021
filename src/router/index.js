@@ -30,7 +30,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import('../views/AboutUs.vue'),
   },
   {
     path: '/speakers',
@@ -38,7 +38,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 講者介紹',
     },
-    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import('../views/ConfSpeaker.vue'),
   },
   {
     path: '/timesheets',
@@ -46,7 +46,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 大會議程',
     },
-    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import('../views/ConfTimesheets.vue'),
   },
   {
     path: '/sponsors',
@@ -54,7 +54,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 合作夥伴',
     },
-    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import('../views/ConfSponsors.vue'),
   },
   {
     path: '/teammember',
@@ -62,7 +62,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 工作團隊',
     },
-    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import('../views/TeamMember.vue'),
   },
   {
     path: '/conduct',
@@ -70,7 +70,7 @@ const routes = [
     meta: {
       title: 'JSDC 2021 - 行為準則',
     },
-    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: () => import('../views/ConfConduct.vue'),
   },
   {
     path: '*',
