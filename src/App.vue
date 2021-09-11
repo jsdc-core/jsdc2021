@@ -14,7 +14,7 @@ import FooterSide from '@/components/layout/FooterSide.vue';
 export default {
   components: {
     FooterSide,
-    MenuNav,
+    // MenuNav,
   },
   computed: {
     appVersion: () => process.env.version,
