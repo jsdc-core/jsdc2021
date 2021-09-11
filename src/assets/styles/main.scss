@@ -1,4 +1,10 @@
 body {
   background: url('~@/assets/images/common/bg.png') $dark;
-  @apply bg-contain;
+  @apply bg-cover;
+  @apply bg-center;
+}
+
+.content_title {
+  @apply text-3xl;
+  @apply text-center;
 }
