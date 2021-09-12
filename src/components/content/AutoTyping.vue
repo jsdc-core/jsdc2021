@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <h1 class="border-dashed text-4xl">
+    <h1 class="border-dashed text-4xl my-3 md:m-0">
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSehfUy_ZaaByP8ZaDV4YkAf7XvIraTAiBA3kBu5iRP1iC9FDw/viewform" title="講者招募中" target="_blank"
         class="button w-full max-w-xs bg-yellow-300 tracking-wide font-extrabold border-none rounded-full p-2">
         ＃講者強力招募中
