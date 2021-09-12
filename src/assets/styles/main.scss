@@ -30,3 +30,19 @@ body {
   @apply text-justify;
   @apply pb-5;
 }
+
+
+// Animation
+// Radar
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
