@@ -1,11 +1,11 @@
 <template>
-  <section class="conduct-container">
+  <article class="container">
     <img src="@/assets/images/realStuff/whiteBoard.jpg" class="board hidden md:inline-block md:max-w-4xl">
-    <div class="conduct-content bg-white bg-opacity-30 md:bg-transparent md:absolute mx-2 mb-8 py-5 rounded-b-lg text-left">
+    <div class="conduct-content bg-white bg-opacity-30 md:bg-transparent md:absolute mx-2 mb-8 py-5 rounded-b-lg">
       <div class="content_title text-white md:text-black pt-5">
         行為準則
       </div>
-      <div class="content_main text-white md:text-black px-5">
+      <div class="content_main text-white md:text-black px-5 text-left">
         <p class="mt-5 px-5">
           JSDC 致力於為社群中的每位成員提供更自由、友善、開放的環境。我們相信每位參與社群活動的夥伴，不論年齡、性別、性傾向、外貌、職業、軟體偏好、種族或宗教信仰等，都值得被尊重。而我們會盡力提供最安全的環境，
           讓參與 JSDC 的每位朋友能夠在社群中相互扶助、成長，並在其中綻放自己生命的光芒。
@@ -20,7 +20,7 @@
         <div class="mt-5 px-5">如有會眾違反了此準則的行為，JSDC 籌備團隊可採取任何適合的行動，包含警告或將騷擾者驅離會場，並且不退還費用，必要者會移送警察機關等法辦單位。</div>
       </div>
     </div>
-  </section>
+  </article>
 </template>
 
 <script>
@@ -30,15 +30,6 @@ export default {
 </script>
 
 <style lang="scss">
-.conduct-container {
-  padding-top: 30%;
-  min-height: calc(100vh - 30px);
-
-  @media screen and (min-width: $tablet-size) {
-    padding-top: 8%;
-    @apply text-center;
-  }
-}
 .board {
   @media screen and (min-width: $tablet-size) {
     filter: blur(10px);
