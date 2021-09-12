@@ -67,7 +67,7 @@
     @apply w-7;
     @apply h-7;
     @apply absolute;
-    border-radius: 100%;
+    @apply rounded-full;
     border: 6px solid rgba(245, 158, 11, .64);
     z-index: -1;
     top: 50%;
@@ -81,19 +81,6 @@
   49% { @apply bg-white; }
   50% { @apply bg-transparent; }
   99% { @apply bg-transparent; }
-}
-
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
 }
 </style>
 
