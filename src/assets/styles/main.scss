@@ -4,7 +4,29 @@ body {
   @apply bg-center;
 }
 
+.container {
+  padding-top: 30%;
+  min-height: calc(100vh - 30px);
+  @apply relative;
+  @apply m-auto;
+  @apply text-center;
+  @media screen and (min-width: $tablet-size) {
+    padding-top: 8%;
+  }
+}
+
 .content_title {
   @apply text-3xl;
-  @apply text-center;
+  @apply pb-5;
+  @apply tracking-wide;
+  @media screen and (min-width: $tablet-size) {
+    @apply text-4xl;
+  }
+}
+
+.content_main {
+  @apply text-lg;
+  @apply text-left;
+  @apply text-justify;
+  @apply pb-5;
 }
