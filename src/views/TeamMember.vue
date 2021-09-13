@@ -1,11 +1,20 @@
 <template>
-  <div class="member-content">
+  <article class="container">
 
-  </div>
+    <help-tooling></help-tooling>
+  </article>
 </template>
 
+<script>
+import HelpTooling from '@/components/layout/HelpTooling.vue';
+
+export default {
+  components: {
+    HelpTooling,
+  },
+};
+</script>
+
 <style lang="scss">
-.member-content {
-  min-height: calc(100vh - 30px);
-}
+
 </style>
