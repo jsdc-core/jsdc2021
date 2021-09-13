@@ -1,6 +1,6 @@
 body {
   background: url('~@/assets/images/common/bg.png') $dark;
-  @apply bg-cover;
+  @apply bg-contain;
   @apply bg-center;
 }
 
@@ -31,6 +31,46 @@ body {
   @apply pb-5;
 }
 
+.button {
+  @apply cursor-pointer;
+  @apply outline-none;
+  @apply relative;
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(90deg, rgba(252, 211, 77, 1) 0%, rgba(245, 158, 11, 1) 100%);
+  box-shadow: 12px 12px 24px rgba(245, 158, 11, .64);
+  transition: all 0.3s ease-in-out 0s;
+  &:before {
+    content: '';
+    @apply rounded-full;
+    @apply absolute;
+    @apply opacity-0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 6px solid rgba(245, 158, 11, 0.64);
+    transition: all .3s ease-in-out 0s;
+  }
+  &:focus,
+  &:hover {
+    color: #313133;
+    transform: translateY(-6px);
+    &::before {
+      @apply opacity-100;
+    }
+  }
+  &:after {
+    content: '';
+    @apply absolute;
+    @apply rounded-full;
+    @apply pointer-events-none;
+    border: 6px solid rgba(245, 158, 11, .64);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1s infinite;
+  }
+}
 
 // Animation
 // Radar

@@ -37,8 +37,19 @@
         </div>
       </div>
     </section>
+    <help-tooling></help-tooling>
   </article>
 </template>
+
+<script>
+import HelpTooling from '@/components/layout/HelpTooling.vue';
+
+export default {
+  components: {
+    HelpTooling,
+  },
+};
+</script>
 
 <style lang="scss">
 .content-left {
