@@ -32,48 +32,16 @@
 }
 
 .button {
-  font-family: 'Nunito', sans-serif;
-  background: linear-gradient(90deg, rgba(252, 211, 77, 1) 0%, rgba(245, 158, 11, 1) 100%);
-  box-shadow: 12px 12px 24px rgba(245, 158, 11, .64);
-  transition: all 0.3s ease-in-out 0s;
-  @apply cursor-pointer;
-  @apply outline-none;
-  @apply relative;
   @apply pt-2;
   &:before {
-    content: '';
-    @apply rounded-full;
-    @apply absolute;
-    @apply opacity-0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     min-width: calc(300px + 12px);
     min-height: calc(60px + 12px);
-    border: 6px solid rgba(245, 158, 11, 0.64);
     box-shadow: 0 0 60px rgba(204, 132, 8, .64);
-    transition: all .3s ease-in-out 0s;
-  }
-  &:focus,
-  &:hover {
-    color: #313133;
-    transform: translateY(-6px);
-    &::before {
-      @apply opacity-100;
-    }
   }
   &:after {
     content: '';
     @apply w-7;
     @apply h-7;
-    @apply absolute;
-    border-radius: 100%;
-    border: 6px solid rgba(245, 158, 11, .64);
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring 1s infinite;
   }
 }
 
@@ -81,19 +49,6 @@
   49% { @apply bg-white; }
   50% { @apply bg-transparent; }
   99% { @apply bg-transparent; }
-}
-
-@keyframes ring {
-  0% {
-    width: 30px;
-    height: 30px;
-    opacity: 1;
-  }
-  100% {
-    width: 300px;
-    height: 300px;
-    opacity: 0;
-  }
 }
 </style>
 
