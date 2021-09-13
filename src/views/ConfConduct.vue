@@ -1,11 +1,11 @@
 <template>
   <article class="container">
-    <img src="@/assets/images/realStuff/whiteBoard.jpg" class="board hidden md:inline-block md:max-w-4xl">
-    <div class="conduct-content bg-white bg-opacity-30 md:bg-transparent md:absolute mx-2 mb-8 py-5 rounded-b-lg">
-      <div class="content_title text-white md:text-black pt-5">
+    <img src="@/assets/images/realStuff/whiteBoard.jpg" class="board hidden lg:inline-block lg:max-w-4xl">
+    <div class="conduct-content bg-white bg-opacity-30 lg:bg-transparent lg:absolute mx-2 mb-8 py-5 rounded-b-lg">
+      <div class="content_title text-white lg:text-black pt-5">
         行為準則
       </div>
-      <div class="content_main text-white md:text-black px-5 text-left">
+      <div class="content_main text-white lg:text-black px-5 text-left">
         <p class="mt-5 px-5">
           JSDC 致力於為社群中的每位成員提供更自由、友善、開放的環境。我們相信每位參與社群活動的夥伴，不論年齡、性別、性傾向、外貌、職業、軟體偏好、種族或宗教信仰等，都值得被尊重。而我們會盡力提供最安全的環境，
           讓參與 JSDC 的每位朋友能夠在社群中相互扶助、成長，並在其中綻放自己生命的光芒。
@@ -36,12 +36,12 @@ export default {
 
 <style lang="scss">
 .board {
-  @media screen and (min-width: $tablet-size) {
+  @media screen and (min-width: $laptop-size) {
     filter: blur(10px);
   }
 }
 .conduct-content {
-  @media screen and (min-width: $tablet-size) {
+  @media screen and (min-width: $laptop-size) {
     @apply absolute;
     @apply w-full;
     @apply max-w-4xl;
