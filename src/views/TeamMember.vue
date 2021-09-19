@@ -4,7 +4,7 @@
     <div class="member-card flex flex-wrap justify-between">
       <template v-for="pl in memberData">
         <figure class="text-white m-5" :key="pl.name">
-          <img class="rounded-full mb-5" src="@/assets/images/member/logo.jpg" :alt="pl.name">
+          <img class="rounded-full mb-5" src="@/assets/images/member/logo.jpg" :alt="pl.name" title="JSDC 工作人員">
           <figcaption class="text-xl">{{pl.name}}</figcaption>
         </figure>
       </template>
