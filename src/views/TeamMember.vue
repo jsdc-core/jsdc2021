@@ -1,7 +1,7 @@
 <template>
   <article class="container">
 
-    <help-tooling></help-tooling>
+    <help-tooling words="徵"></help-tooling>
   </article>
 </template>
 

@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-    <help-tooling></help-tooling>
+    <help-tooling words="徵"></help-tooling>
   </article>
 </template>
 
