@@ -26,15 +26,24 @@
       </div>
     </div>
     <transition name="fadeHeight" mode="out-in">
-      <ul class="mobile_menu bg-white rounded-b mx-2 mb-2 -mt-2" v-if="menuToggle">
+      <ul class="mobile_menu bg-white rounded-b mx-2 mb-2 -mt-2 md:hidden" v-if="menuToggle">
         <template v-for="(item, index) in menuData">
-          <router-link class="p-3 lg:p-4" tag="li" :to="item.path" :key="`no${index}`">
+          <router-link class="p-3" tag="li" :to="item.path" :key="`no${index}`">
             <span class="pb-2 transition-colors duration-200 border-transparent text-black"
               @click="menuToggle=false">
               {{item.name}}
             </span>
           </router-link>
         </template>
+        <li class="p-4 text-center">
+          <a href="#" target="_blank" title="我要購票"
+            class="tickets bg-blue-500 hover:bg-blue-400 border-b-4 border-blue-700 hover:border-blue-500">
+            <span class="pb-2 transition-colors duration-200 border-transparent"
+              @click="menuToggle=false">
+              我要購票
+            </span>
+          </a>
+        </li>
       </ul>
     </transition>
   </nav>
@@ -44,7 +53,7 @@
 .logo_wrapper {
   width: 100px;
 }
-a:hover span,
+a:not(.tickets):hover span,
 .link_active span {
   @apply border-b-4;
   @apply border-solid;
@@ -61,6 +70,20 @@ a:hover span,
 {
   @apply opacity-0;
   @apply max-h-0;
+}
+.align-btn {
+  @apply absolute;
+  @apply top-2/4;
+  @apply left-2/4;
+  transform: translate(-50%, -50%);
+}
+
+.tickets {
+  @apply rounded;
+  @apply text-white;
+  @apply font-bold;
+  @apply p-2;
+  animation: glowing 1300ms infinite;
 }
 </style>
 

@@ -7,8 +7,8 @@
       </div>
       <div class="notfound-content p-10 text-white text-center">
         <p class=" text-3xl">迷路了嗎？ 你要找的網頁似乎不存在！！</p>
-        <button class="go_back mt-5 bg-blue-500 hover:bg-blue-400 text-white font-bold py-5 px-4 border-b-4 border-blue-700
-                      hover:border-blue-500 rounded" @click="$router.push('/')">
+        <button class="go_back mt-5 bg-blue-500 hover:bg-blue-400 border-blue-700 hover:border-blue-500"
+                      @click="$router.push('/')">
             回去首頁看看
         </button>
       </div>
@@ -49,6 +49,12 @@
   }
 }
 .go_back {
+  @apply rounded;
+  @apply text-white;
+  @apply font-bold;
+  @apply py-5;
+  @apply px-4;
+  @apply border-b-4;
   animation: glowing 1300ms infinite;
 }
 
