@@ -1,7 +1,7 @@
 <template>
   <div class="tooling">
     <div class="button circle text-4xl font-black">
-      <a class="inline-block leading-9 pt-3 text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSehfUy_ZaaByP8ZaDV4YkAf7XvIraTAiBA3kBu5iRP1iC9FDw/viewform" title="講者強力招募中">
+      <a class="inline-block leading-9 pt-3 text-white" :href="url" title="講者強力招募中" target="_blank" >
         {{words}}
       </a>
     </div>
@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'tooling',
-  props: ['words'],
+  props: ['words', 'url'],
 };
 </script>
 
@@ -36,6 +36,7 @@ export default {
     &:before{
       min-height: calc(64px + 10px);
       min-width: calc(64px + 10px);
+      z-index: -9999;
     }
   }
 

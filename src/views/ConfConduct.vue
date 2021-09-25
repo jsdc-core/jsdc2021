@@ -20,7 +20,7 @@
         <div class="mt-5 px-5">如有會眾違反了此準則的行為，JSDC 籌備團隊可採取任何適合的行動，包含警告或將騷擾者驅離會場，並且不退還費用，必要者會移送警察機關等法辦單位。</div>
       </div>
     </div>
-    <help-tooling words="徵"></help-tooling>
+    <help-tooling words="徵" :url="redirectUrl"></help-tooling>
   </article>
 </template>
 
@@ -28,6 +28,11 @@
 import HelpTooling from '@/components/layout/HelpTooling.vue';
 
 export default {
+  data() {
+    return {
+      redirectUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSehfUy_ZaaByP8ZaDV4YkAf7XvIraTAiBA3kBu5iRP1iC9FDw/viewform',
+    };
+  },
   components: {
     HelpTooling,
   },

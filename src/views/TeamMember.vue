@@ -9,7 +9,7 @@
         </figure>
       </template>
     </div>
-    <help-tooling words="徵"></help-tooling>
+    <help-tooling words="徵" :url="redirectUrl"></help-tooling>
   </article>
 </template>
 
@@ -19,6 +19,7 @@ import HelpTooling from '@/components/layout/HelpTooling.vue';
 export default {
   data() {
     return {
+      redirectUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSehfUy_ZaaByP8ZaDV4YkAf7XvIraTAiBA3kBu5iRP1iC9FDw/viewform',
       memberData: [{ name: 'Caesar', picPath: '' }, { name: '維元 (Wei)', picPath: '@/assets/images/member/weiyuan.jpg' },
         { name: 'Ma', picPath: '@/assets/images/member/ma.jpg' }, { name: 'Horken', picPath: '@/assets/images/member/horken.jpg' }],
       defaultImagePath: '@/assets/images/member/logo.jpg',
@@ -33,5 +34,6 @@ export default {
 <style lang="scss">
 figure {
   flex: 0 0 25%;
+  max-width: 20%;
 }
 </style>
