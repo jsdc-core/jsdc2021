@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-    <help-tooling></help-tooling>
+    <help-tooling words="徵" :url="redirectUrl"></help-tooling>
   </article>
 </template>
 
@@ -45,6 +45,11 @@
 import HelpTooling from '@/components/layout/HelpTooling.vue';
 
 export default {
+  data() {
+    return {
+      redirectUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSehfUy_ZaaByP8ZaDV4YkAf7XvIraTAiBA3kBu5iRP1iC9FDw/viewform',
+    };
+  },
   components: {
     HelpTooling,
   },

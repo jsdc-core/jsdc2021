@@ -1,11 +1,8 @@
 <template>
-  <div class="sponsors-content">
+  <div class="container">
 
   </div>
 </template>
 
 <style lang="scss">
-.sponsors-content {
-  min-height: calc(100vh - 30px);
-}
 </style>
