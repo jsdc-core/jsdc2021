@@ -6,7 +6,7 @@
         <p class="code text-red-600 p-4">4<span>0</span><span>4</span></p>
       </div>
       <div class="notfound-content p-10 text-white text-center">
-        <p class=" text-3xl">迷路了嗎？ 你要找的網頁似乎不存在！！</p>
+        <p class="text-3xl">迷路了嗎？ 你要找的網頁似乎不存在！！</p>
         <button class="go_back mt-5 bg-blue-500 hover:bg-blue-400 border-blue-700 hover:border-blue-500"
                       @click="$router.push('/')">
             回去首頁看看
