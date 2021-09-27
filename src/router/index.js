@@ -1,9 +1,6 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import { createWebHistory, createRouter } from 'vue-router';
 import LandingPage from '../views/LandingPage.vue';
 import NoFound from '../views/404.vue';
-
-Vue.use(VueRouter);
 
 const routes = [
   {
@@ -73,7 +70,7 @@ const routes = [
     component: () => import('../views/ConfConduct.vue'),
   },
   {
-    path: '*',
+    path: '/:catchAll(.*)',
     name: 'nofound',
     meta: {
       title: 'JSDC 2021 - 你迷路了嗎？！',
@@ -82,18 +79,14 @@ const routes = [
   },
 ];
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  linkActiveClass: 'link_active',
+const router = createRouter({
+  history: createWebHistory(),
   routes,
 });
 
 router.beforeEach((to, _, next) => {
-  Vue.nextTick(() => {
-    document.title = to.meta.title || 'JSDC 2021 - JSDC主年會';
-    next();
-  });
+  document.title = to.meta.title || 'JSDC 2021 - JSDC主年會';
+  next();
 });
 
 export default router;

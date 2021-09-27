@@ -9,8 +9,8 @@
       </div>
       <!-- Screen nav bar -->
       <div class="hidden md:inline-block float-right py-5 -mt-1">
-        <template v-for="(item, index) in menuData">
-          <router-link class="p-3 lg:p-4" :to="item.path" :key="`no.${index}`">
+        <template v-for="(item, index) in menuData" :key="`no.${index}`">
+          <router-link class="p-3 lg:p-4" :to="item.path">
             <span class="pb-2 transition-colors ease-in-out duration-200 border-transparent text-black"
               @click="menuToggle=false" >
               {{item.name}}
@@ -27,8 +27,8 @@
     </div>
     <transition name="fadeHeight" mode="out-in">
       <ul class="mobile_menu bg-white rounded-b mx-2 mb-2 -mt-2 md:hidden" v-if="menuToggle">
-        <template v-for="(item, index) in menuData">
-          <router-link class="p-3" tag="li" :to="item.path" :key="`no${index}`">
+        <template v-for="(item, index) in menuData" :key="`no${index}`">
+          <router-link class="p-3" tag="li" :to="item.path">
             <span class="pb-2 transition-colors duration-200 border-transparent text-black"
               @click="menuToggle=false">
               {{item.name}}

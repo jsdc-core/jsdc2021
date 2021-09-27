@@ -2,8 +2,8 @@
   <article class="container">
     <h1 class="text-center text-white font-bold text-3xl mb-28">JSDC 工作人員</h1>
     <div class="member-card flex flex-wrap justify-between">
-      <template v-for="pl in memberData">
-        <figure class="text-white m-5" :key="pl.name">
+      <template v-for="pl in memberData" :key="pl.name">
+        <figure class="text-white m-5">
           <img class="rounded-full mb-5 w-full" :src="pl.picPath" :alt="pl.name" title="JSDC 工作人員">
           <figcaption class="text-xl">{{pl.name}}</figcaption>
         </figure>
