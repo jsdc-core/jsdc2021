@@ -10,6 +10,7 @@ body {
   @apply relative;
   @apply m-auto;
   @apply text-center;
+  @apply mb-8;
   @media screen and (min-width: $tablet-size) {
     padding-top: 8%;
   }
