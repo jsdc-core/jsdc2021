@@ -9,14 +9,12 @@
       </div>
       <!-- Screen nav bar -->
       <div class="hidden md:inline-block float-right py-5 -mt-1">
-        <template v-for="(item, index) in menuData">
-          <router-link class="p-3 lg:p-4" :to="item.path" :key="`no.${index}`">
-            <span class="pb-2 transition-colors ease-in-out duration-200 border-transparent text-black"
-              @click="menuToggle=false" >
-              {{item.name}}
-            </span>
-          </router-link>
-        </template>
+        <router-link v-for="(item, index) in menuData" class="p-3 lg:p-4" :to="item.path" :key="`no.${index}`">
+          <span class="pb-2 transition-colors ease-in-out duration-200 border-transparent text-black"
+            @click="menuToggle=false" >
+            {{item.name}}
+          </span>
+        </router-link>
       </div>
       <!-- Mobile hamberger menu -->
       <div class="hamberger-container inline-block md:hidden align-middle float-right py-2.5">
@@ -27,14 +25,12 @@
     </div>
     <transition name="fadeHeight" mode="out-in">
       <ul class="mobile_menu bg-white rounded-b mx-2 mb-2 -mt-2 md:hidden" v-if="menuToggle">
-        <template v-for="(item, index) in menuData">
-          <router-link class="p-3" tag="li" :to="item.path" :key="`no${index}`">
-            <span class="pb-2 transition-colors duration-200 border-transparent text-black"
-              @click="menuToggle=false">
-              {{item.name}}
-            </span>
-          </router-link>
-        </template>
+        <router-link v-for="(item, index) in menuData" class="p-3 block" tag="li" :to="item.path" :key="`no${index}`">
+          <span class="pb-2 transition-colors duration-200 border-transparent text-black"
+            @click="menuToggle=false">
+            {{item.name}}
+          </span>
+        </router-link>
         <li class="p-4 text-center">
           <a href="#" target="_blank" title="我要購票"
             class="tickets bg-blue-500 hover:bg-blue-400 border-b-4 border-blue-700 hover:border-blue-500">

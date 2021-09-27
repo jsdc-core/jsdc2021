@@ -1,13 +1,11 @@
 <template>
   <article class="container">
     <h1 class="text-center text-white font-bold text-3xl mb-28">JSDC 工作人員</h1>
-    <div class="member-card flex flex-wrap justify-between">
-      <template v-for="pl in memberData">
-        <figure class="text-white m-5" :key="pl.name">
-          <img class="rounded-full mb-5 w-full" :src="pl.picPath" :alt="pl.name" title="JSDC 工作人員">
-          <figcaption class="text-xl">{{pl.name}}</figcaption>
-        </figure>
-      </template>
+    <div class="member-card flex flex-col md:flex-row md:flex-wrap justify-between">
+      <figure class="text-white m-5" v-for="pl in memberData" :key="pl.name">
+        <img class="rounded-full mb-5 w-full" :src="pl.picPath" :alt="pl.name" title="JSDC 工作人員">
+        <figcaption class="text-xl">{{pl.name}}</figcaption>
+      </figure>
     </div>
     <help-tooling words="徵" :url="redirectUrl"></help-tooling>
   </article>
@@ -41,7 +39,10 @@ export default {
 
 <style lang="scss">
 figure {
-  flex: 0 0 20%;
-  max-width: 20%;
+  width: 80%;
+  @apply self-center;
+  @media screen and (min-width: $mobile-size) {
+    max-width: 20%;
+  }
 }
 </style>
