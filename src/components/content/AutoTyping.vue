@@ -1,16 +1,16 @@
 <template>
   <div class="text-center">
-    <h1 class="border-dashed text-4xl my-3 md:m-0">
-      <a href="https://www.accupass.com/event/2109210508051383682446" title="講者招募中" target="_blank"
+    <h3 class="border-dashed text-4xl my-3 md:m-0">
+      <a href="https://www.accupass.com/event/2109210508051383682446" title="年會售票" target="_blank"
         class="button w-full max-w-xs bg-yellow-300 tracking-wide font-extrabold border-none rounded-full p-2">
         ＃熱烈售票中
       </a>
-    </h1>
-    <h3 class="intro_content">JSDC 2021 開發者年會
+    </h3>
+    <h1 class="intro_content">JSDC 2021 開發者年會
       <span class="text-yellow-500 tracking-widest">{{typeValue}}</span>
       <span class="cursor inline-block ml-1 w-1 bg-white" :class="{typing: typeStatus}">&nbsp;</span> 將於線上舉行
-    </h3>
-    <div class="sub_content">敬請期待</div>
+    </h1>
+    <div class="sub_content">JSDC 第一個<span class="text-yellow-400 px-2 font-bold">十年</span>的紀念</div>
   </div>
 </template>
 
@@ -36,7 +36,7 @@
   &:before {
     min-width: calc(240px + 12px);
     min-height: calc(60px + 12px);
-    box-shadow: 0 0 60px rgba(204, 132, 8, .64);
+    box-shadow: 0 0 50px rgba(204, 132, 8, .54);
   }
   &:after {
     content: '';
