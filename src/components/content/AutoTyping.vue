@@ -1,9 +1,9 @@
 <template>
   <div class="text-center">
     <h1 class="border-dashed text-4xl my-3 md:m-0">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSehfUy_ZaaByP8ZaDV4YkAf7XvIraTAiBA3kBu5iRP1iC9FDw/viewform" title="講者招募中" target="_blank"
+      <a href="https://www.accupass.com/event/2109210508051383682446" title="講者招募中" target="_blank"
         class="button w-full max-w-xs bg-yellow-300 tracking-wide font-extrabold border-none rounded-full p-2">
-        ＃講者強力招募中
+        ＃熱烈售票中
       </a>
     </h1>
     <h3 class="intro_content">JSDC 2021 開發者年會
@@ -34,7 +34,7 @@
 .button {
   @apply pt-2;
   &:before {
-    min-width: calc(300px + 12px);
+    min-width: calc(240px + 12px);
     min-height: calc(60px + 12px);
     box-shadow: 0 0 60px rgba(204, 132, 8, .64);
   }
