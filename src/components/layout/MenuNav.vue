@@ -32,7 +32,7 @@
           </span>
         </router-link>
         <li class="p-4 text-center">
-          <a href="#" target="_blank" title="我要購票"
+          <a href="https://www.accupass.com/event/2109210508051383682446" target="_blank" title="我要購票"
             class="tickets bg-blue-500 hover:bg-blue-400 border-b-4 border-blue-700 hover:border-blue-500">
             <span class="pb-2 transition-colors duration-200 border-transparent"
               @click="menuToggle=false">
