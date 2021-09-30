@@ -66,7 +66,6 @@ const charIdx = ref(0);
 
 function typeText() {
   if (charIdx.value < typeArray[typeArrayIdx.value].length) {
-    console.log(typeStatus);
     if (!typeStatus.value) typeStatus.value = true;
     typeValue.value += typeArray[typeArrayIdx.value].charAt(charIdx.value);
     charIdx.value += 1;
