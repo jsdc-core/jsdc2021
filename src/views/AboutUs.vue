@@ -41,19 +41,11 @@
   </article>
 </template>
 
-<script>
+<script setup>
+import { ref } from 'vue';
 import HelpTooling from '@/components/layout/HelpTooling.vue';
 
-export default {
-  data() {
-    return {
-      redirectUrl: 'https://www.accupass.com/event/2109210508051383682446',
-    };
-  },
-  components: {
-    HelpTooling,
-  },
-};
+const redirectUrl = ref('https://www.accupass.com/event/2109210508051383682446');
 </script>
 
 <style lang="scss">

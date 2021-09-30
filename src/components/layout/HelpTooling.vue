@@ -8,11 +8,15 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'tooling',
-  props: ['words', 'url'],
-};
+<script setup>
+import { toRefs } from 'vue';
+
+const props = defineProps({
+  words: String,
+  url: String,
+});
+
+const { words, url } = toRefs(props);
 </script>
 
 <style lang="scss">
