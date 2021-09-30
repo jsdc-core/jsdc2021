@@ -52,48 +52,46 @@
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      typeValue: '',
-      typeStatus: false,
-      typeArray: ['10/30', '30 Oct.'],
-      typeArrayIdx: 0,
-      typeingSpeed: 200,
-      erasingSpeed: 100,
-      newTextDelay: 2000,
-      charIdx: 0,
-    };
-  },
-  methods: {
-    typeText() {
-      if (this.charIdx < this.typeArray[this.typeArrayIdx].length) {
-        if (!this.typeStatus) this.typeStatus = true;
-        this.typeValue += this.typeArray[this.typeArrayIdx].charAt(this.charIdx);
-        this.charIdx += 1;
-        setTimeout(this.typeText, this.typeingSpeed);
-      } else {
-        this.typeStatus = false;
-        setTimeout(this.eraseText, this.newTextDelay);
-      }
-    },
-    eraseText() {
-      if (this.charIdx > 0) {
-        if (!this.typeStatus) this.typeStatus = true;
-        this.typeValue = this.typeArray[this.typeArrayIdx].substring(0, this.charIdx - 1);
-        this.charIdx -= 1;
-        setTimeout(this.eraseText, this.erasingSpeed);
-      } else {
-        this.typeStatus = false;
-        this.typeArrayIdx += 1;
-        if (this.typeArrayIdx >= this.typeArray.length) this.typeArrayIdx = 0;
-        setTimeout(this.typeText, this.typeingSpeed + 1000);
-      }
-    },
-  },
-  created() {
-    setTimeout(this.typeText, this.newTextDelay + 200);
-  },
-};
+<script setup>
+import { ref, reactive, onMounted } from 'vue';
+
+const typeArray = reactive(['10/30', '30 Oct.']);
+const typeingSpeed = 200;
+const erasingSpeed = 100;
+const newTextDelay = 2000;
+const typeValue = ref('');
+const typeStatus = ref(false);
+const typeArrayIdx = ref(0);
+const charIdx = ref(0);
+
+function typeText() {
+  if (charIdx.value < typeArray[typeArrayIdx.value].length) {
+    console.log(typeStatus);
+    if (!typeStatus.value) typeStatus.value = true;
+    typeValue.value += typeArray[typeArrayIdx.value].charAt(charIdx.value);
+    charIdx.value += 1;
+    setTimeout(typeText, typeingSpeed);
+  } else {
+    typeStatus.value = false;
+    setTimeout(eraseText, newTextDelay);
+  }
+}
+
+function eraseText() {
+  if (charIdx.value > 0) {
+    if (!typeStatus.value) typeStatus.value = true;
+    typeValue.value = typeArray[typeArrayIdx.value].substring(0, charIdx.value - 1);
+    charIdx.value -= 1;
+    setTimeout(eraseText, erasingSpeed);
+  } else {
+    typeStatus.value = false;
+    typeArrayIdx.value += 1;
+    if (typeArrayIdx.value >= typeArray.length) typeArrayIdx.value = 0;
+    setTimeout(typeText, typeingSpeed + 1000);
+  }
+}
+
+onMounted(() => {
+  setTimeout(typeText, newTextDelay + 200);
+});
 </script>

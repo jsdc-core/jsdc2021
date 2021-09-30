@@ -89,9 +89,3 @@
   }
 }
 </style>
-
-<script>
-export default {
-  name: 'nofound',
-};
-</script>

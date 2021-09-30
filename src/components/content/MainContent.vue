@@ -13,12 +13,6 @@
 }
 </style>
 
-<script>
+<script setup>
 import AutoTyping from '@/components/content/AutoTyping.vue';
-
-export default {
-  components: {
-    AutoTyping,
-  },
-};
 </script>

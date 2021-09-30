@@ -25,7 +25,7 @@
     </div>
     <transition name="fadeHeight" mode="out-in">
       <ul class="mobile_menu bg-white rounded-b mx-2 mb-2 -mt-2 md:hidden" v-if="menuToggle">
-        <router-link v-for="(item, index) in menuData" class="p-3 block" tag="li" :to="item.path" :key="`no${index}`">
+        <router-link v-for="(item, index) in menuData" class="p-5 block" tag="li" :to="item.path" :key="`no${index}`">
           <span class="pb-2 transition-colors duration-200 border-transparent text-black"
             @click="menuToggle=false">
             {{item.name}}
@@ -50,7 +50,7 @@
   width: 100px;
 }
 a:not(.tickets):hover span,
-.link_active span {
+.router-link-active span {
   @apply border-b-4;
   @apply border-solid;
   @apply border-yellow-600;
@@ -83,20 +83,15 @@ a:not(.tickets):hover span,
 }
 </style>
 
-<script>
-export default {
-  data() {
-    return {
-      // menuData: [{ name: '關於JSDC', path: '/aboutus' }, { name: '講者介紹', path: '/speakers' }, { name: '大會議程', path: '/timesheets' },
-      //   { name: '合作夥伴', path: '/sponsors' }, { name: '工作團隊', path: '/teammember' }, { name: '行為準則', path: '/conduct' }],
-      menuData: [{ name: '關於JSDC', path: '/aboutus' }, { name: '行為準則', path: '/conduct' }],
-      menuToggle: false,
-    };
-  },
-  methods: {
-    switchMenu() {
-      this.menuToggle = !this.menuToggle;
-    },
-  },
-};
+<script setup>
+import { ref } from 'vue';
+
+// menuData: [{ name: '關於JSDC', path: '/aboutus' }, { name: '講者介紹', path: '/speakers' }, { name: '大會議程', path: '/timesheets' },
+//   { name: '合作夥伴', path: '/sponsors' }, { name: '工作團隊', path: '/teammember' }, { name: '行為準則', path: '/conduct' }],
+const menuData = ref([{ name: '關於JSDC', path: '/aboutus' }, { name: '行為準則', path: '/conduct' }]);
+const menuToggle = ref(false);
+
+function switchMenu() {
+  this.menuToggle = !this.menuToggle;
+}
 </script>
