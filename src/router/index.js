@@ -46,14 +46,6 @@ const routes = [
     component: () => import('../views/ConfTimesheets.vue'),
   },
   {
-    path: '/sponsors',
-    name: 'sponsors',
-    meta: {
-      title: 'JSDC 2021 - 合作夥伴',
-    },
-    component: () => import('../views/ConfSponsors.vue'),
-  },
-  {
     path: '/teammember',
     name: 'teammember',
     meta: {
