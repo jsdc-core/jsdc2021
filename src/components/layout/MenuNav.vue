@@ -86,9 +86,9 @@ a:not(.tickets):hover span,
 <script setup>
 import { ref } from 'vue';
 
-// menuData: [{ name: '關於JSDC', path: '/aboutus' }, { name: '講者介紹', path: '/speakers' }, { name: '大會議程', path: '/timesheets' },
+// menuData: [{ name: '關於JSDC', path: '/aboutus' }, { name: '大會議程', path: '/timesheets' },
 //   { name: '合作夥伴', path: '/sponsors' }, { name: '工作團隊', path: '/teammember' }, { name: '行為準則', path: '/conduct' }],
-const menuData = ref([{ name: '關於JSDC', path: '/aboutus' }, { name: '行為準則', path: '/conduct' }]);
+const menuData = ref([{ name: '關於JSDC', path: '/aboutus' }, { name: '講者介紹', path: '/speakers' }, { name: '行為準則', path: '/conduct' }]);
 const menuToggle = ref(false);
 
 function switchMenu() {
