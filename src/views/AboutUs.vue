@@ -68,7 +68,6 @@ const redirectUrl = ref('https://www.accupass.com/event/2109210508051383682446')
   @apply p-10;
   @apply flex;
   @apply justify-center;
-  @apply align-middle;
   @apply flex-col;
   @media screen and (min-width: $laptop-size) {
     @apply flex-row;
