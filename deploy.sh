@@ -14,6 +14,8 @@ commit_message="deploy $PKG_VERSION to gitPage"
 # if you are deploying to a custom domain
 echo '2021.jsdc.tw' > CNAME
 
+cp -i index.html 404.html
+
 git init
 git add -A
 git commit -m "$commit_message"
