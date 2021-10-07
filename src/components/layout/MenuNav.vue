@@ -92,6 +92,6 @@ const menuData = ref([{ name: '關於JSDC', path: '/aboutus' }, { name: '講者�
 const menuToggle = ref(false);
 
 function switchMenu() {
-  this.menuToggle = !this.menuToggle;
+  menuToggle.value = !menuToggle.value;
 }
 </script>
