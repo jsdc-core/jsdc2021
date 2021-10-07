@@ -1,7 +1,6 @@
 const appVersion = JSON.stringify(require('./package.json').version);
 
 module.exports = {
-  // publicPath: process.env.NODE_ENV === 'production' ? '/jsdc2021/' : '/',
   chainWebpack: (config) => {
     /* eslint-disable no-return-assign, no-param-reassign */
     config
