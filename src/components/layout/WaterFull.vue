@@ -20,7 +20,7 @@
 
 <script setup>
 import {
-  watch, defineProps, ref, toRefs, onMounted, onBeforeUnmount, nextTick,
+  watch, ref, toRefs, onMounted, onBeforeUnmount, nextTick,
 } from 'vue';
 
 const props = defineProps({
