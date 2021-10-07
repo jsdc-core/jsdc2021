@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <article class="container">
 
-  </div>
+  </article>
 </template>
 
 <style lang="scss">
