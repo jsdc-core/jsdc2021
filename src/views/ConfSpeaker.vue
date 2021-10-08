@@ -2,7 +2,7 @@
   <article class="container">
     <water-full :gap="45" :items="speaker">
       <template #default="{ item }">
-        <div class="speaker">
+        <div class="speaker m-2 lg:m-auto">
           <figure class="speaker-photo">
             <img class="block m-auto" :src="require(`@/assets/images/speaker/${item.img}`)" :alt="item.name">
           </figure>
