@@ -10,9 +10,9 @@
         </div>
         <div class="topic">
           <div v-for="(item, idx) in timeTable.topic" :key="`topic${idx}`">
-            <div class="category">{{item.category || 'JSDC 2021'}}</div>
-            <h3 class="title">{{item.topic}}</h3>
-            <h2 class="speaker">{{item.speaker || 'TBD'}}</h2>
+            <div class="topic-category">{{item.category || 'JSDC 2021'}}</div>
+            <h3 class="topic-title">{{item.topic}}</h3>
+            <h2 class="topic-speaker">{{item.speaker || 'TBD'}}</h2>
           </div>
         </div>
       </div>
@@ -237,7 +237,7 @@ const timeSheet = [
       @apply border-dashed;
       @apply border-yellow-500;
       flex: 2 0 30%;
-      .category {
+      .topic-category {
         @apply bg-blue-600;
         @apply bg-opacity-95;
         @apply text-sm;
@@ -247,12 +247,12 @@ const timeSheet = [
         @apply px-2;
         @apply py-1;
       }
-      .title,
-      .speaker {
+      .topic-title,
+      .topic-speaker {
         @apply text-left;
         @apply pt-1;
       }
-      .title {
+      .topic-title {
         @apply text-2xl;
       }
     }
