@@ -250,9 +250,9 @@ const timeSheet = [
   @apply bg-white;
   @apply bg-opacity-80;
   @apply px-5;
+  @apply mx-2;
   @apply text-lg;
   @apply max-w-5xl;
-  @apply m-auto;
   @apply rounded-md;
   @apply border-4;
   @apply border-yellow-500;
@@ -326,6 +326,9 @@ const timeSheet = [
         }
       }
     }
+  }
+  @media screen and (min-width: $tablet-size) {
+    @apply m-auto;
   }
 }
 </style>
