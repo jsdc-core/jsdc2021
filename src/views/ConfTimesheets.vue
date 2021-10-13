@@ -270,7 +270,20 @@ const timeSheet = [
     @apply max-w-max;
     @apply px-2;
     @apply py-1;
-    @apply m-auto;
+    @apply text-xs;
+    @apply mr-4;
+    @media screen and (min-width: $tablet-size) {
+      @apply text-base;
+      @apply m-auto;
+    }
+  }
+  .time {
+    @apply text-sm;
+    @apply mr-4;
+    @media screen and (min-width: $tablet-size) {
+      @apply text-base;
+      @apply m-auto;
+    }
   }
   .timesheet-col {
     @apply flex;
@@ -293,7 +306,7 @@ const timeSheet = [
         @apply pt-1;
       }
       .topic-title {
-        @apply text-2xl;
+        @apply text-xl;
       }
       .speker-icon {
         @apply rounded-full;
@@ -306,6 +319,11 @@ const timeSheet = [
       }
       & > div ~ div {
         @apply mt-4;
+      }
+      @media screen and (min-width: $tablet-size) {
+        & .topic-title {
+          @apply text-2xl;
+        }
       }
     }
   }
