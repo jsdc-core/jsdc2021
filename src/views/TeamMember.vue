@@ -15,7 +15,7 @@
 import HelpTooling from '@/components/layout/HelpTooling.vue';
 
 const defaultImage = require('@/assets/images/common/logo.jpg');
-const imgWei = require('@/assets/images/member/weiyuan.jpg');
+const imgWei = require('@/assets/images/speaker/weiyuan.jpg');
 const imgMa = require('@/assets/images/member/ma.jpg');
 const imgHorken = require('@/assets/images/member/horken.jpg');
 

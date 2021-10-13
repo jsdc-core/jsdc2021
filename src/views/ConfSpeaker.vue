@@ -70,7 +70,7 @@ const speaker = [{
   img: 'wolke.jpg',
   organ: 'SOHO',
   repo: 'https://github.com/Wolke',
-  social: 'https://www.line-community.me/ja/apiexpert/detail/60adb082851f7443b473e751 ',
+  social: 'https://www.line-community.me/ja/apiexpert/detail/60adb082851f7443b473e751',
   desc: 'LAE , GDE , 程式中一個迷途小書僮',
 },
 {
