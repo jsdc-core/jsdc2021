@@ -34,10 +34,13 @@
         </div>
       </div>
     </div>
+    <help-tooling words="票" :url="redirectUrl"></help-tooling>
   </article>
 </template>
 
 <script setup>
+import HelpTooling from '@/components/layout/HelpTooling.vue';
+
 const timeSheet = [
   {
     time: '08:30 - 08:40',
