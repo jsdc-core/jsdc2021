@@ -191,6 +191,31 @@ const speaker = [{
   repo: 'https://twitter.com/yftzeng',
   social: 'https://fb.com/yftzeng.tw',
   desc: '略懂軟體、資安、法律與商業。做過顧問、寫過專利、當過 CTO、創過業。一生經歷數次失敗，劇情雖不足以寫成《人月神話》或《鳳凰計畫》，但過程點滴，都是種磨練與成長。成功雖難以複製，但或許得以從我的失敗中借鏡。',
+},
+{
+  name: 'Simon Sun',
+  img: 'simon.jpg',
+  organ: 'JSDC 議程組',
+  repo: 'https://github.com/SimonSun1988',
+  social: '',
+  desc: '對於 JavaScript 的熱愛勝於一切。',
+},
+{
+  name: 'NiJia Lin',
+  img: 'nijia.jpeg',
+  organ: 'LINE',
+  repo: 'https://github.com/louis70109',
+  social: 'https://www.facebook.com/groups/linebot',
+  desc: 'LINE Taiwan 開發者關係與技術推廣部的開發技術推廣工程師。主要負責 LINE 開發技術推廣，技術品牌的宣傳與社群關係經營。平時熱衷於關注技術趨勢與技術社群參與，希望透過技術分享幫助加入開源領域的新苗們，並同時為 LINE Bot SDK 維護者之一。',
+},
+{
+  name: '張維元',
+  img: 'weiyuan.jpeg',
+  organ: 'JSDC 議程組',
+  repo: 'https://github.com/v123582',
+  social: 'https://www.facebook.com/v123582',
+  desc: `擅長網站開發與資料科學的雙棲工程師，斜槓於程式社群 【JSDC】核心成員及 【資料科學家的工作日常】粉專經營。目前在 ALPHACamp 擔任資料工程師，同時也在中華電信、工研院與多所學校等單位持續開課。擁有多次國內大型技術會議講者與競賽獲獎經驗，曾獲得 2018
+          台灣總統盃黑客松 冠軍隊伍與 2016 微軟 Imagine Cup 台灣區冠軍，持續在不同的平台發表對 #資料科學、 #網頁開發 或 #軟體職涯 相關的分享。`,
 }];
 </script>
 
