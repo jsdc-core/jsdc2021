@@ -135,8 +135,8 @@ const timeSheet = [
       topic: '【參與 #技術社群 教會你的事】座談',
       speaker: [
         { name: '（主持人）Caesar', img: 'default.jpg', url: 'https://blog.caesarchi.com/' },
-        { name: '吳哲宇', img: 'cheyuwu.jpg', url: 'https://www.facebook.com/cheyuwu345/' },
-        { name: 'Anderson Chen', img: 'anderson.jpg', url: 'https://anderson-chen.medium.com/' },
+        { name: '范聖佑', img: 'shengyou.jpeg', url: 'https://www.facebook.com/kraftsman.io/' },
+        { name: 'Richard 強哥', img: 'richard.jpg', url: 'https://fb.me/legist' },
       ],
     }],
   },
