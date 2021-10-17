@@ -1,8 +1,8 @@
 <template>
-  <article class="container">
+  <article class="container text-white">
     <section class="w-full">
       <div class="about-jsdc">
-        <div class="content-left text-white">
+        <div class="content-left">
           <div class="content_title">
             關於JSDC
           </div>
@@ -23,7 +23,7 @@
     <div class="my-10 h-px bg-white mx-2"></div>
     <section class="w-full">
       <div class="about-conf mx-2">
-        <div class="content-btn text-white w-full">
+        <div class="content-btn w-full">
           <div class="content_title text-yellow-600">
             JavaScript 開發者年會
           </div>
