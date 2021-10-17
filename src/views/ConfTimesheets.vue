@@ -73,7 +73,7 @@ const timeSheet = [
       {
         topic: '【#跨平台整合 - JavaScript 無所不在】座談',
         speaker: [
-          { name: '（主持人）Ninja', img: 'default.jpg', url: '#' },
+          { name: '（主持人）Ninja', img: 'nijia.jpeg', url: 'https://www.facebook.com/groups/linebot' },
           { name: 'C. T. Lin', img: 'ctlin.jpeg', url: 'https://www.facebook.com/chentsulin' },
           { name: 'Wolke Lin , 林建宏', img: 'wolke.jpg', url: 'https://www.line-community.me/ja/apiexpert/detail/60adb082851f7443b473e751' },
           { name: 'Sam Huang', img: 'sam.jpg', url: 'https://www.facebook.com/sailplaneTW/' }],
@@ -111,7 +111,7 @@ const timeSheet = [
       {
         topic: '【用 JavaScript 玩轉 #區塊鏈應用】座談',
         speaker: [
-          { name: '（主持人）Simon', img: 'default.jpg', url: '#' },
+          { name: '（主持人）Simon', img: 'simon.jpg', url: '#' },
           { name: '吳哲宇', img: 'cheyuwu.jpg', url: 'https://www.facebook.com/cheyuwu345/' },
           { name: 'Anderson Chen', img: 'anderson.jpg', url: 'https://anderson-chen.medium.com/' },
           { name: '李婷婷', img: 'ting.jpeg', url: 'https://www.facebook.com/lee.ting.ting.tina' },
@@ -167,7 +167,7 @@ const timeSheet = [
       {
         topic: '【後框架時代對前端開發者的影響】座談',
         speaker: [
-          { name: '（主持人）維元', img: 'weiyuan.jpg', url: 'https://twitter.com/v123582' },
+          { name: '（主持人）維元', img: 'weiyuan.jpeg', url: 'https://www.facebook.com/v123582' },
           { name: '徐愷', img: 'kkshyu.jpg', url: 'https://www.facebook.com/weblab.tw/' },
           { name: '邱柏鈞 Leo', img: 'leo.jpeg', url: 'https://medium.com/@airwaves' },
           { name: '愷開（Kalan）', img: 'kalan.png', url: 'https://twitter.com/kalanyei' },
