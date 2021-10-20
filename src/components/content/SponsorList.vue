@@ -85,7 +85,7 @@ const sponserList = [
   },
   {
     desc: '亞洲最完整 JavaScript 全端開發課程',
-    img: '',
+    img: 'alphacamp.png',
     title: 'ALPHA Camp',
     url: 'https://tw.alphacamp.co/curriculum',
   },
