@@ -7,7 +7,7 @@
           <img v-if="company.img" :src="require(`@/assets/images/sponser/${company.img}`)" :alt="company.desc" :title="company.desc">
           <img v-else src="@/assets/images/speaker/default.jpg" alt="JSDC 2021" title="JSDC 2021">
         </a>
-        <figcaption>{{company.title}}</figcaption>
+        <!-- <figcaption>{{company.title}}</figcaption> -->
       </figure>
     </div>
   </section>
@@ -88,6 +88,18 @@ const sponserList = [
     img: 'alphacamp.png',
     title: 'ALPHA Camp',
     url: 'https://tw.alphacamp.co/curriculum',
+  },
+  {
+    desc: 'Dcard is Hiring!進官網查看更多職缺',
+    img: 'dcard.png',
+    title: 'Dcard',
+    url: 'https://about.dcard.tw/',
+  },
+  {
+    desc: 'Hahow 是新創教育科技公司，以知識技能分享的線上學習平台',
+    img: 'hahow.png',
+    title: 'Hahow',
+    url: 'https://hahow.in/',
   },
 ];
 </script>
