@@ -53,11 +53,11 @@ section.container {
   }
 
   @media screen and (min-width: $tablet-size) {
-    @apply justify-start;
+    @apply justify-between;
     figure {
-      @apply max-w-xs;
       @apply border-8;
       flex: 1 0 250px;
+      max-width: 250px;
     }
   }
 }
