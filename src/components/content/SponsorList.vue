@@ -101,5 +101,11 @@ const sponserList = [
     title: 'Hahow',
     url: 'https://hahow.in/',
   },
+  {
+    desc: 'ACCUPASS 是亞洲領先的活動社交平台，串聯消費者及主辦方。提供線上及線下整合服務，打造更優質的報名和現場體驗。',
+    img: 'accupass.png',
+    title: 'ACCUPASS',
+    url: 'https://www.liinks.co/accupass',
+  },
 ];
 </script>
