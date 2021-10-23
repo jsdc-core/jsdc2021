@@ -53,11 +53,11 @@ section.container {
   }
 
   @media screen and (min-width: $tablet-size) {
-    @apply justify-start;
+    @apply justify-between;
     figure {
-      @apply max-w-xs;
       @apply border-8;
       flex: 1 0 250px;
+      max-width: 250px;
     }
   }
 }
@@ -100,6 +100,12 @@ const sponserList = [
     img: 'hahow.png',
     title: 'Hahow',
     url: 'https://hahow.in/',
+  },
+  {
+    desc: 'ACCUPASS 是亞洲領先的活動社交平台，串聯消費者及主辦方。提供線上及線下整合服務，打造更優質的報名和現場體驗。',
+    img: 'accupass.png',
+    title: 'ACCUPASS',
+    url: 'https://www.liinks.co/accupass',
   },
 ];
 </script>
