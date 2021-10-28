@@ -168,7 +168,6 @@ const timeSheet = [
         topic: '【後框架時代對前端開發者的影響】座談',
         speaker: [
           { name: '（主持人）維元', img: 'weiyuan.jpeg', url: 'https://www.facebook.com/v123582' },
-          { name: '徐愷', img: 'kkshyu.jpg', url: 'https://www.facebook.com/weblab.tw/' },
           { name: '邱柏鈞 Leo', img: 'leo.jpeg', url: 'https://medium.com/@airwaves' },
           { name: '愷開（Kalan）', img: 'kalan.png', url: 'https://twitter.com/kalanyei' },
         ],
@@ -207,8 +206,6 @@ const timeSheet = [
         topic: '【回歸 JavaScript 本質與初心】座談',
         speaker: [
           { name: '（主持人）PJCHENder', img: 'chen.jpeg', url: 'https://www.facebook.com/pjchender/' },
-          { name: '莫力全 Kyle Mo', img: 'kyle.jpeg', url: 'https://medium.com/@oldmo860617' },
-          { name: 'Mujing', img: 'mujing.jpeg', url: 'https://www.facebook.com/mujing/' },
           { name: 'Kuan', img: 'kuan.jpg', url: 'https://vocus.cc/user/@kuan' },
           { name: 'Paipo', img: 'paipo.jpg', url: 'https://webhack.connpass.com/' },
         ],
