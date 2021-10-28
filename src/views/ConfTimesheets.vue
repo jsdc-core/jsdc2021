@@ -169,7 +169,7 @@ const timeSheet = [
         speaker: [
           { name: '（主持人）維元', img: 'weiyuan.jpeg', url: 'https://www.facebook.com/v123582' },
           { name: '邱柏鈞 Leo', img: 'leo.jpeg', url: 'https://medium.com/@airwaves' },
-          { name: '愷開（Kalan）', img: 'kalan.png', url: 'https://twitter.com/kalanyei' },
+          { name: '徐愷', img: 'kkshyu.jpg', url: 'https://www.facebook.com/weblab.tw/' },
         ],
       },
     ],
