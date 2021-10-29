@@ -1,7 +1,7 @@
 <template>
   <div class="tooling">
     <div class="button circle text-4xl font-black">
-      <a class="inline-block leading-9 pt-3 text-white" :href="url" title="講者強力招募中" target="_blank" >
+      <a class="inline-block leading-9 pt-3 text-white" :href="url" title="來與講師起鬨吧～" target="_blank" >
         {{words}}
       </a>
     </div>
