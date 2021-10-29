@@ -12,7 +12,7 @@
     </h3>
     <h1 class="intro_content">JSDC 2021 開發者年會
       <span class="text-yellow-500 tracking-widest">{{typeValue}}</span>
-      <span class="cursor inline-block ml-1 w-1 bg-white" :class="{typing: typeStatus}">&nbsp;</span> 將於線上舉行
+      <span class="cursor inline-block ml-1 w-1 bg-white" :class="{typing: typeStatus}">&nbsp;</span> 即將舉行
     </h1>
     <div class="sub_content">JSDC 第一個<span class="text-yellow-400 px-2 font-bold">十年</span>的紀念</div>
   </div>
