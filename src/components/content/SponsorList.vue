@@ -107,5 +107,11 @@ const sponserList = [
     title: 'ACCUPASS',
     url: 'https://www.liinks.co/accupass',
   },
+  {
+    desc: 'iChief',
+    img: 'ichef.png',
+    title: 'iChief',
+    url: 'https://www.ichefpos.com/zh-tw',
+  },
 ];
 </script>

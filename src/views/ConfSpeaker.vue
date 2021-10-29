@@ -20,7 +20,7 @@
         </div>
       </template>
     </water-full>
-    <help-tooling words="票" :url="redirectUrl"></help-tooling>
+    <help-tooling words="聊" :url="redirectUrl"></help-tooling>
   </article>
 </template>
 
@@ -29,7 +29,7 @@ import { ref } from 'vue';
 import HelpTooling from '@/components/layout/HelpTooling.vue';
 import WaterFull from '@/components/layout/WaterFull.vue';
 
-const redirectUrl = ref('https://www.accupass.com/event/2109210508051383682446');
+const redirectUrl = ref('https://gitter.im/JSDC-2021/community');
 const speaker = [{
   name: 'Paipo',
   img: 'paipo.jpg',
