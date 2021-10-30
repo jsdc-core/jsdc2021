@@ -56,8 +56,8 @@ section.container {
     @apply justify-between;
     figure {
       @apply border-8;
-      flex: 1 0 250px;
-      max-width: 250px;
+      flex: 1 0 20%;
+      max-width: 25%;
     }
   }
 }
