@@ -1,10 +1,12 @@
 <template>
   <div class="text-center">
-    <h3 class="border-dashed text-4xl my-3 md:m-0">
+    <h3 class="border-dashed text-2xl my-3 md:text-4xl md:m-0 md:inline-block">
       <a href="https://hackmd.io/@JSDC-tw/2021conference/https%3A%2F%2Fhackmd.io%2F%40JSDC-tw%2F2021conference" title="感謝 HackMD 贊助"
         class="button w-full max-w-xs bg-yellow-300 tracking-wide font-extrabold border-none rounded-full p-2">
         ＃JSDC 共筆
       </a>
+    </h3>
+    <h3 class="border-dashed text-2xl my-3 mt-8 md:text-4xl md:m-0 md:inline-block">
       <a href="https://gitter.im/JSDC-2021/community#" title="Gitter 起鬨區"
         class="button w-full max-w-xs bg-yellow-300 tracking-wide font-extrabold border-none rounded-full p-2 ml-5">
         ＃Gitter 搖滾區
@@ -35,23 +37,38 @@
   }
 }
 
-.button {
-  @apply pt-2;
-  &:before {
-    min-width: calc(250px + 12px);
-    min-height: calc(60px + 12px);
-    box-shadow: 0 0 50px rgba(204, 132, 8, .54);
-  }
-  &:after {
-    content: '';
-    @apply w-7;
-    @apply h-7;
-  }
-  &:nth-child(2) {
+.border-dashed {
+  .button {
+    @apply pt-2;
     &:before {
-      min-width: calc(280px + 12px);
+      min-width: calc(160px + 12px);
+      min-height: calc(40px + 12px);
+      box-shadow: 0 0 50px rgba(204, 132, 8, .54);
     }
-
+    &:after {
+      content: '';
+      @apply w-7;
+      @apply h-7;
+    }
+  }
+  &:nth-child(even) {
+    .button:before {
+      min-width: calc(190px + 12px);
+    }
+  }
+  @media screen and (min-width: $tablet-size) {
+    .button {
+      @apply pt-2;
+      &:before {
+        min-width: calc(240px + 12px);
+        min-height: calc(60px + 12px);
+      }
+    }
+    &:nth-child(even) {
+      .button:before {
+        min-width: calc(270px + 12px);
+      }
+    }
   }
 }
 
