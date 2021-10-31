@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-    <help-tooling words="聊" :url="redirectUrl"></help-tooling>
+    <help-tooling words="問" :url="redirectUrl"></help-tooling>
   </article>
 </template>
 
@@ -45,7 +45,7 @@
 import { ref } from 'vue';
 import HelpTooling from '@/components/layout/HelpTooling.vue';
 
-const redirectUrl = ref('https://gitter.im/JSDC-2021/community');
+const redirectUrl = ref('https://forms.gle/zagmrUpA5RC9xZc8A');
 </script>
 
 <style lang="scss">

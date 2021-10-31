@@ -7,7 +7,7 @@
         <figcaption class="text-xl">{{pl.name}}</figcaption>
       </figure>
     </div>
-    <help-tooling words="票" :url="redirectUrl"></help-tooling>
+    <help-tooling words="問" :url="redirectUrl"></help-tooling>
   </article>
 </template>
 
@@ -22,7 +22,7 @@ const imgHorken = require('@/assets/images/member/horken.jpg');
 export default {
   data() {
     return {
-      redirectUrl: 'https://www.accupass.com/event/2109210508051383682446',
+      redirectUrl: 'https://forms.gle/zagmrUpA5RC9xZc8A',
       memberData: [
         { name: 'Caesar', picPath: defaultImage },
         { name: '維元 (Wei)', picPath: imgWei },
