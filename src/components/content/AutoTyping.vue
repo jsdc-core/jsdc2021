@@ -76,7 +76,7 @@
 <script setup>
 import { ref, reactive, onMounted } from 'vue';
 
-const typeArray = reactive(['讓我們2022年見！', 'See you 2022!']);
+const typeArray = reactive(['讓我們2022年見！', 'See you on 2022!']);
 const typeingSpeed = 200;
 const erasingSpeed = 100;
 const newTextDelay = 2000;
